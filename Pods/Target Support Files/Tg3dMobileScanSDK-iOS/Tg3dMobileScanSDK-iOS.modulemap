@@ -1,0 +1,6 @@
+framework module Tg3dMobileScanSDK_iOS {
+  umbrella header "Tg3dMobileScanSDK-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

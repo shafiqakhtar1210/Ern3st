@@ -1,0 +1,20 @@
+{
+  "name": "I3DRecorder",
+  "version": "1.0.9",
+  "summary": "in3D iOS SDK for 3D body model creation.",
+  "description": "in3D iOS SDK helps you to record data for 3D body model creation. SDK makes it easy to create your own recording screens.",
+  "homepage": "https://github.com/in3D-io/in3D-iOS-SDK",
+  "authors": {
+    "loringit": "yakupov.bulat@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/in3D-io/in3D-iOS-SDK.git",
+    "tag": "1.0.9"
+  },
+  "vendored_frameworks": "I3DRecorder.xcframework",
+  "swift_versions": "5",
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_version": "5"
+}

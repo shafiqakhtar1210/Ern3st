@@ -9,10 +9,22 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    let apiKey: String = "jpbDi9zrB1zXXpWLnMCdUm2ay3EXxz0rfeIt"
+    let scannerId: String = "​N3bxK2R"
+    let sessionKey: String = "​WC5fWj4JSQw71GrgjkTgSI5T1CMFhgpGUGgt"
+    var userProfile: UserProfile?
+    var lastScanRecord: ScanRecord?
+    var sdk: TG3DMobileScan?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        if self.sdk == nil {
+            self.sdk = TG3DMobileScan(apiKey: self.apiKey)
+            
+            self.sdk!.currentRegion() { (rc, baseUrl) in
+                if rc == 0 {
+                    self.sdk!.setup(baseUrl: baseUrl)
+                }
+            }
+        }
         // Override point for customization after application launch.
         return true
     }

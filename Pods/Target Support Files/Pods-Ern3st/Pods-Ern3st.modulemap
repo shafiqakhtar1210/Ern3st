@@ -1,0 +1,6 @@
+framework module Pods_Ern3st {
+  umbrella header "Pods-Ern3st-umbrella.h"
+
+  export *
+  module * { export * }
+}
