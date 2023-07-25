@@ -1328,20 +1328,12 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vid_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ew6-Cp-8Kf">
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QV-To-qHj">
-                                <rect key="frame" x="194" y="60" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4me-YB-By0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ew6-Cp-8Kf" firstAttribute="leading" secondItem="4me-YB-By0" secondAttribute="leading" id="L8X-i8-cQr"/>
                             <constraint firstItem="ew6-Cp-8Kf" firstAttribute="top" secondItem="4me-YB-By0" secondAttribute="top" id="RcD-yb-xus"/>
-                            <constraint firstItem="1QV-To-qHj" firstAttribute="centerX" secondItem="TrL-Sq-YpC" secondAttribute="centerX" id="hmo-6O-KS0"/>
-                            <constraint firstItem="1QV-To-qHj" firstAttribute="top" secondItem="4me-YB-By0" secondAttribute="top" constant="60" id="qwt-eP-0LI"/>
                             <constraint firstItem="4me-YB-By0" firstAttribute="trailing" secondItem="ew6-Cp-8Kf" secondAttribute="trailing" id="ubl-rI-Xf5"/>
                             <constraint firstItem="4me-YB-By0" firstAttribute="bottom" secondItem="ew6-Cp-8Kf" secondAttribute="bottom" id="x3U-8n-3gM"/>
                         </constraints>

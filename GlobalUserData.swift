@@ -13,7 +13,7 @@ class GlobalUserData{
     static var userHeoight: Int = 0
     static var userOrder: UserOrder?
     static var userId: String = ""
-    static var products: [Product] = []
+   
     static var scans: [Scan] = []
     static var orderId = ""
     static var userProfile: UserProfile = UserProfile()

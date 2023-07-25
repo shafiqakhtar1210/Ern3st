@@ -10,7 +10,6 @@
 		32113546006F958B2A53ACD0 /* Pods_Ern3st.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2359F07D31AC3030D10C4FFC /* Pods_Ern3st.framework */; };
 		410AB75129AA18A60056FDC5 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410AB75029AA18A60056FDC5 /* Helpers.swift */; };
 		411552432A6BE25C000BDB47 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411552422A6BE25C000BDB47 /* VideoViewController.swift */; };
-		411552492A6C215E000BDB47 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411552482A6C215E000BDB47 /* OverlayView.swift */; };
 		4115524B2A6C22F3000BDB47 /* measurements.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4115524A2A6C22EF000BDB47 /* measurements.mp4 */; };
 		411C413E2A41D49A00662FA7 /* CenteredButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C413D2A41D49A00662FA7 /* CenteredButton.swift */; };
 		411C41402A41E7E500662FA7 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C413F2A41E7E500662FA7 /* UIColor+Ext.swift */; };
@@ -44,17 +43,13 @@
 		41C276D4294CFC7C00150AE5 /* OrderIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C276D3294CFC7C00150AE5 /* OrderIDViewController.swift */; };
 		41C35839299E7986004DAE52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C35838299E7986004DAE52 /* ViewController.swift */; };
 		41D97B4729438AB4005AAC83 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D97B4629438AB4005AAC83 /* UIImage+Ext.swift */; };
-		41E20E602950964400C12E8D /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E20E5F2950964400C12E8D /* ProductCollectionViewCell.swift */; };
 		41E20E6229509DC800C12E8D /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E20E6129509DC800C12E8D /* UIImageView+Ext.swift */; };
 		41E31852290D46BA001B81A1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E31851290D46BA001B81A1 /* Launch Screen.storyboard */; };
 		41E6871F2A6802E500D70562 /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E6871E2A6802E500D70562 /* StaticData.swift */; };
 		41E82BB92A6FAEFF005531C7 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E82BB82A6FAEFF005531C7 /* UIView+Ext.swift */; };
 		41E9253F2A01048300537ACD /* ScansTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E9253E2A01048300537ACD /* ScansTableViewController.swift */; };
 		41EB1E412947272700369A84 /* UserOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EB1E402947272700369A84 /* UserOrder.swift */; };
-		41EB1E43294765D800369A84 /* ErnestUserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EB1E42294765D800369A84 /* ErnestUserSession.swift */; };
-		41EB1E472947776A00369A84 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EB1E462947776A00369A84 /* Product.swift */; };
 		41F116072A0831930016DC94 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F116062A0831930016DC94 /* BottomSheetViewController.swift */; };
-		41F18A2329F9542B00112E99 /* ProductCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F18A2229F9542B00112E99 /* ProductCollectionView.swift */; };
 		41F5E5F8299C0B9C00C340D8 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F5E5F7299C0B9C00C340D8 /* ImageCollectionViewController.swift */; };
 		41F74A7B28D5EB090006F136 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F74A7A28D5EB090006F136 /* BaseViewController.swift */; };
 		41F74A7E28D5ED1A0006F136 /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F74A7D28D5ED1A0006F136 /* UIColorExt.swift */; };
@@ -67,7 +62,6 @@
 		2359F07D31AC3030D10C4FFC /* Pods_Ern3st.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ern3st.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		410AB75029AA18A60056FDC5 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		411552422A6BE25C000BDB47 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
-		411552482A6C215E000BDB47 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		4115524A2A6C22EF000BDB47 /* measurements.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = measurements.mp4; sourceTree = "<group>"; };
 		411C413D2A41D49A00662FA7 /* CenteredButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteredButton.swift; sourceTree = "<group>"; };
 		411C413F2A41E7E500662FA7 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
@@ -103,17 +97,13 @@
 		41C276D3294CFC7C00150AE5 /* OrderIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderIDViewController.swift; sourceTree = "<group>"; };
 		41C35838299E7986004DAE52 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		41D97B4629438AB4005AAC83 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
-		41E20E5F2950964400C12E8D /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		41E20E6129509DC800C12E8D /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
 		41E31851290D46BA001B81A1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		41E6871E2A6802E500D70562 /* StaticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
 		41E82BB82A6FAEFF005531C7 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		41E9253E2A01048300537ACD /* ScansTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScansTableViewController.swift; sourceTree = "<group>"; };
 		41EB1E402947272700369A84 /* UserOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOrder.swift; sourceTree = "<group>"; };
-		41EB1E42294765D800369A84 /* ErnestUserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErnestUserSession.swift; sourceTree = "<group>"; };
-		41EB1E462947776A00369A84 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		41F116062A0831930016DC94 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
-		41F18A2229F9542B00112E99 /* ProductCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionView.swift; sourceTree = "<group>"; };
 		41F5E5F7299C0B9C00C340D8 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
 		41F74A7A28D5EB090006F136 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		41F74A7D28D5ED1A0006F136 /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
@@ -172,10 +162,8 @@
 				41F80E162A01712900C67038 /* Scan.swift */,
 				412A71CE29FBEEE6002317E1 /* UIButton+Ext.swift */,
 				41E20E6129509DC800C12E8D /* UIImageView+Ext.swift */,
-				41E20E5F2950964400C12E8D /* ProductCollectionViewCell.swift */,
 				41C276D1294CE87400150AE5 /* GlobalUserData.swift */,
 				41C276CF294CCC3000150AE5 /* UserData.swift */,
-				41EB1E462947776A00369A84 /* Product.swift */,
 				41EB1E402947272700369A84 /* UserOrder.swift */,
 				41C246D229770C2800FB8CF4 /* TG3DMobileScan.swift */,
 				41D97B4629438AB4005AAC83 /* UIImage+Ext.swift */,
@@ -213,12 +201,10 @@
 				41F5E5F7299C0B9C00C340D8 /* ImageCollectionViewController.swift */,
 				41E31851290D46BA001B81A1 /* Launch Screen.storyboard */,
 				41B84A2A2915426600AF085A /* ApiNetworkManager.swift */,
-				41EB1E42294765D800369A84 /* ErnestUserSession.swift */,
 				41C276D3294CFC7C00150AE5 /* OrderIDViewController.swift */,
 				41B07ECD298EB907001D43FA /* GetStartedViewController.swift */,
 				415203C9299025C400A69EF8 /* PermissionsViewController.swift */,
 				410AB75029AA18A60056FDC5 /* Helpers.swift */,
-				41F18A2229F9542B00112E99 /* ProductCollectionView.swift */,
 				41E9253E2A01048300537ACD /* ScansTableViewController.swift */,
 				41F80E122A01659600C67038 /* ScanTableViewCell.xib */,
 				41F80E142A016E1A00C67038 /* ScansTableViewCell.swift */,
@@ -229,7 +215,6 @@
 				4192333F2A4B1DBA00C18BCE /* ToggleLabel.swift */,
 				412FFB3B2A643CFE00C1E0C1 /* MeasureDetailsVC.swift */,
 				411552422A6BE25C000BDB47 /* VideoViewController.swift */,
-				411552482A6C215E000BDB47 /* OverlayView.swift */,
 			);
 			path = Ern3st;
 			sourceTree = "<group>";
@@ -372,8 +357,6 @@
 				4140B027294221950018F313 /* CustomLabel.swift in Sources */,
 				411C41402A41E7E500662FA7 /* UIColor+Ext.swift in Sources */,
 				41E9253F2A01048300537ACD /* ScansTableViewController.swift in Sources */,
-				411552492A6C215E000BDB47 /* OverlayView.swift in Sources */,
-				41EB1E43294765D800369A84 /* ErnestUserSession.swift in Sources */,
 				41C276D4294CFC7C00150AE5 /* OrderIDViewController.swift in Sources */,
 				41E6871F2A6802E500D70562 /* StaticData.swift in Sources */,
 				41E82BB92A6FAEFF005531C7 /* UIView+Ext.swift in Sources */,
@@ -386,15 +369,12 @@
 				411552432A6BE25C000BDB47 /* VideoViewController.swift in Sources */,
 				414FA93528D0945E00695318 /* AppDelegate.swift in Sources */,
 				41F74A7E28D5ED1A0006F136 /* UIColorExt.swift in Sources */,
-				41EB1E472947776A00369A84 /* Product.swift in Sources */,
 				41B07ECE298EB907001D43FA /* GetStartedViewController.swift in Sources */,
 				41C276D2294CE87400150AE5 /* GlobalUserData.swift in Sources */,
 				411C413E2A41D49A00662FA7 /* CenteredButton.swift in Sources */,
 				410AB75129AA18A60056FDC5 /* Helpers.swift in Sources */,
 				4127AA3B28E73E5A007801BC /* URLRequest.swift in Sources */,
 				41E20E6229509DC800C12E8D /* UIImageView+Ext.swift in Sources */,
-				41F18A2329F9542B00112E99 /* ProductCollectionView.swift in Sources */,
-				41E20E602950964400C12E8D /* ProductCollectionViewCell.swift in Sources */,
 				41C246D329770C2800FB8CF4 /* TG3DMobileScan.swift in Sources */,
 				4185CD3F2A28C175006CCE3A /* RadioButton.swift in Sources */,
 				41C35839299E7986004DAE52 /* ViewController.swift in Sources */,

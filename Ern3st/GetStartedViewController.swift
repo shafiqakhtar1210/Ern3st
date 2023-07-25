@@ -27,7 +27,7 @@ class GetStartedViewController: BaseViewController {
         promoLabel.text = "Timeless Pieces, Digitally Conceived, Artsinally Tailored"
         promoLabel.startAnimation(duration: 4, nil)
         // Do any additional setup after loading the view.
-        // UIFont(name: "PanamaMonospace-Regular", size: 20)
+         UIFont(name: "PanamaMonospace-Regular", size: 20)
         // Replace "CustomFontName" with the actual name of your custom font
        
 

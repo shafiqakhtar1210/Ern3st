@@ -47,7 +47,7 @@ class ApiNetworkManager{
         
         
           func fetchUserOrders(orderID: String){
-         var products = [Product]()
+     
          var shipmentAddress = ""
          var phone = ""
          var email = ""
@@ -129,73 +129,7 @@ class ApiNetworkManager{
          }
          
          }
-    func fetchProducts(completion: @escaping () -> Void){
-        var products: [Product] = []
-        AF.request(base_url+"products?consumer_key=\(consumer_key)&consumer_secret=\(consumer_secret)").responseJSON { response in
-            // debugPrint("Response from wordpress now: \(response)")
-            let datastring = NSString(data: response.data!, encoding: String.Encoding.isoLatin1.rawValue)
-            let data = datastring!.data(using: String.Encoding.utf8.rawValue)
-            do {
-                let object = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
-                let jsonArr = object as! NSArray
-                print(jsonArr.count)
-                
-                for dict in jsonArr{
-                    
-                    let myDict = dict as! NSDictionary
-                    
-                    let id = String(describing: myDict["id"]!)
-                    let descStr = String(describing: myDict["description"]!)
-                   
-                    let productDescription = descStr
-                    let productName = String(describing:  myDict["name"]!)
-                    
-                    let productPrice = String(describing:  myDict["price"]!)
-                    var productImgUrl = ""
-                    var productCategory = ""
-                    
-                    if let imgArray = myDict["images"] as? [[String:Any]],
-                       let imgDict = imgArray.first {
-                       
-                        productImgUrl = String(describing: imgDict["src"]!)
-                           // the value is an optional.
-                    }
-                    if let categoryArray = myDict["categories"] as? [[String:Any]],
-                       let categoryDict = categoryArray.first {
-                       
-                        productCategory = String(describing: categoryDict["name"]!)
-                           // the value is an optional.
-                    }
-                    
-                    
-                    
-                    
-                    let product = Product(productCategory: productCategory, productName: productName, productDescription: productDescription, productImageUrl: productImgUrl, productRegPrice: productPrice, productDiscPrice: productPrice, proudctId: id)
-                    products.append(product)
-                    
-                    
-                    
-                    
-                   
-                    
-                 
-                }
-               // NotificationCenter.default.post(name: Notification.Name("DataFetched"), object: nil)
-                GlobalUserData.products = products
-                DispatchQueue.main.async {
-                    completion()
-                }
-                
-                
-                
-                
-                
-            } catch let Error as Error {
-                print("An error occured in networking\(Error.localizedDescription)")
-            }
-            
-        }
-    }
+
     
     
     
