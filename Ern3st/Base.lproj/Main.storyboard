@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nde-J9-CIu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22146" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nde-J9-CIu">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22122"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +12,7 @@
         <!--Splash Screen-->
         <scene sceneID="2gn-t3-guj">
             <objects>
-                <viewController id="nde-J9-CIu" customClass="SplashScreen" customModule="Ern3st" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplashVC" id="nde-J9-CIu" customClass="SplashScreen" customModule="Ern3st" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l3c-yP-gsD">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="59" width="430" height="839"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ern3st-logo-white" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-1X-XNm">
-                                <rect key="frame" x="10.666666666666657" y="402" width="408.66666666666674" height="128"/>
+                                <rect key="frame" x="43" y="402" width="344" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="FQG-sr-mCa"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="RlI-lt-HBB"/>
@@ -37,7 +37,7 @@
                             <constraint firstItem="9qv-lR-1Th" firstAttribute="bottom" secondItem="xTR-1s-HmF" secondAttribute="bottom" id="SNK-PR-YHV"/>
                             <constraint firstItem="xTR-1s-HmF" firstAttribute="leading" secondItem="9qv-lR-1Th" secondAttribute="leading" id="bY5-pT-VeS"/>
                             <constraint firstItem="bkd-1X-XNm" firstAttribute="centerY" secondItem="l3c-yP-gsD" secondAttribute="centerY" id="e6Z-Fw-oDL"/>
-                            <constraint firstItem="bkd-1X-XNm" firstAttribute="width" secondItem="xTR-1s-HmF" secondAttribute="width" multiplier="0.95" id="vIf-L8-LuD"/>
+                            <constraint firstItem="bkd-1X-XNm" firstAttribute="width" secondItem="xTR-1s-HmF" secondAttribute="width" multiplier="0.8" id="vIf-L8-LuD"/>
                         </constraints>
                     </view>
                     <connections>
@@ -166,7 +166,7 @@
         <!--Get Started View Controller-->
         <scene sceneID="L43-7C-VUD">
             <objects>
-                <viewController id="Vxq-cr-cTl" customClass="GetStartedViewController" customModule="Ern3st" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GetStartedVC" id="Vxq-cr-cTl" customClass="GetStartedViewController" customModule="Ern3st" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vbG-7a-v6Q">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,16 +175,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTO-Td-ICy" customClass="DWAnimatedLabel" customModule="DWAnimatedLabel">
-                                <rect key="frame" x="20" y="202.66666666666666" width="390" height="14.333333333333343"/>
+                                <rect key="frame" x="20" y="249.00000000000003" width="390" height="14.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIK-J0-b0w">
-                                <rect key="frame" x="20" y="832" width="390" height="60"/>
+                                <rect key="frame" x="20" y="842" width="390" height="50"/>
                                 <color key="backgroundColor" red="0.2079307437" green="0.20761007070000001" blue="0.21960943939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="A1L-MK-pAs"/>
+                                    <constraint firstAttribute="height" constant="50" id="A1L-MK-pAs"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="GET STARTED">
@@ -208,7 +208,7 @@
                         <viewLayoutGuide key="safeArea" id="38e-zM-NYi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="HTO-Td-ICy" firstAttribute="centerY" secondItem="vbG-7a-v6Q" secondAttribute="centerY" multiplier="0.45" id="5RQ-1N-jFR"/>
+                            <constraint firstItem="HTO-Td-ICy" firstAttribute="centerY" secondItem="vbG-7a-v6Q" secondAttribute="centerY" multiplier="0.55" id="5RQ-1N-jFR"/>
                             <constraint firstItem="V3a-n3-8Ub" firstAttribute="top" secondItem="38e-zM-NYi" secondAttribute="top" id="5kv-mj-cHR"/>
                             <constraint firstItem="HTO-Td-ICy" firstAttribute="centerX" secondItem="vbG-7a-v6Q" secondAttribute="centerX" id="WTr-CO-hcT"/>
                             <constraint firstItem="HTO-Td-ICy" firstAttribute="leading" secondItem="38e-zM-NYi" secondAttribute="leading" constant="20" id="dJV-yi-l3u"/>
@@ -234,7 +234,7 @@
         <!--Permissions View Controller-->
         <scene sceneID="ijI-DO-QSF">
             <objects>
-                <viewController id="Sll-YW-vG9" customClass="PermissionsViewController" customModule="Ern3st" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PermissionVC" id="Sll-YW-vG9" customClass="PermissionsViewController" customModule="Ern3st" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4oG-TX-Dcm">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -251,14 +251,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="underlinedText" value="Permission Required"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="GaramondLight-Italic"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="customFontSize">
                                         <real key="value" value="40"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="f3r-4n-oic">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="f3r-4n-oic">
                                 <rect key="frame" x="21.666666666666657" y="419.33333333333331" width="387" height="186.33333333333331"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.94095462559999998" green="0.93378144500000004" blue="0.90980041030000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -274,7 +272,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NlJ-td-QsD">
+                            <button opaque="NO" alpha="0.45000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NlJ-td-QsD">
                                 <rect key="frame" x="20" y="669" width="390" height="60"/>
                                 <color key="backgroundColor" red="0.2079307437" green="0.20761007070000001" blue="0.21960943939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -297,7 +295,7 @@
                                     <segue destination="aN8-dl-QKr" kind="presentation" modalPresentationStyle="fullScreen" id="Ra6-Ow-yZR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugo-gm-7Sp">
+                            <button opaque="NO" alpha="0.45000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugo-gm-7Sp">
                                 <rect key="frame" x="20" y="761" width="390" height="60"/>
                                 <color key="backgroundColor" red="0.94095462559999998" green="0.93378144500000004" blue="0.90980041030000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -363,7 +361,7 @@
         <!--Procedure View Controller-->
         <scene sceneID="nGI-np-WAm">
             <objects>
-                <viewController id="aN8-dl-QKr" customClass="ProcedureViewController" customModule="Ern3st" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProcedureVC" id="aN8-dl-QKr" customClass="ProcedureViewController" customModule="Ern3st" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="px6-Rg-s8d">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -647,7 +645,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZC-e6-XR4" customClass="CenteredButton" customModule="Ern3st" customModuleProvider="target">
-                                <rect key="frame" x="294" y="550" width="131" height="177"/>
+                                <rect key="frame" x="304.66666666666669" y="550" width="120.33333333333331" height="168"/>
                                 <color key="backgroundColor" red="0.94095462559999998" green="0.93378144500000004" blue="0.90980041030000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -656,7 +654,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="16"/>
+                                        <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="0.5"/>
@@ -668,7 +666,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVg-hX-eUJ" customClass="CenteredButton" customModule="Ern3st" customModuleProvider="target">
-                                <rect key="frame" x="5" y="550" width="131" height="177"/>
+                                <rect key="frame" x="4.9999999999999929" y="550" width="120.33333333333331" height="168"/>
                                 <color key="backgroundColor" red="0.94095462559999998" green="0.93378144500000004" blue="0.90980041030000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -677,7 +675,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="16"/>
+                                        <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="0.5"/>
@@ -688,7 +686,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xet-wi-6n5" customClass="CenteredButton" customModule="Ern3st" customModuleProvider="target">
-                                <rect key="frame" x="149.66666666666666" y="550" width="130.99999999999997" height="177"/>
+                                <rect key="frame" x="154.66666666666666" y="550" width="120.66666666666666" height="168"/>
                                 <color key="backgroundColor" red="0.94095462559999998" green="0.93378144500000004" blue="0.90980041030000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -697,7 +695,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="16"/>
+                                        <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="0.5"/>
@@ -720,7 +718,7 @@
                             <constraint firstItem="3rw-xF-WHb" firstAttribute="top" secondItem="gna-lu-oz4" secondAttribute="top" id="9rO-6x-6Z3"/>
                             <constraint firstItem="Wrh-KD-ETQ" firstAttribute="leading" secondItem="gna-lu-oz4" secondAttribute="leading" constant="8" id="Au4-GH-vS3"/>
                             <constraint firstItem="kDT-Fv-fel" firstAttribute="top" secondItem="Wrh-KD-ETQ" secondAttribute="bottom" constant="20" id="BEb-7j-7ex"/>
-                            <constraint firstItem="xet-wi-6n5" firstAttribute="width" secondItem="3rw-xF-WHb" secondAttribute="width" multiplier="0.304651" id="BPC-ko-7TX"/>
+                            <constraint firstItem="xet-wi-6n5" firstAttribute="width" secondItem="3rw-xF-WHb" secondAttribute="width" multiplier="0.28" id="BPC-ko-7TX"/>
                             <constraint firstItem="xet-wi-6n5" firstAttribute="top" secondItem="kDT-Fv-fel" secondAttribute="bottom" constant="20" id="Elo-G1-0e8"/>
                             <constraint firstItem="3rw-xF-WHb" firstAttribute="leading" secondItem="gna-lu-oz4" secondAttribute="leading" id="KWn-G9-KzP"/>
                             <constraint firstItem="CZC-e6-XR4" firstAttribute="top" secondItem="kDT-Fv-fel" secondAttribute="bottom" constant="20" id="Nmy-eh-ggs"/>
@@ -732,7 +730,7 @@
                             <constraint firstItem="kDT-Fv-fel" firstAttribute="centerX" secondItem="bwM-Lm-ozX" secondAttribute="centerX" id="fOb-fQ-jCr"/>
                             <constraint firstItem="gna-lu-oz4" firstAttribute="bottom" secondItem="3rw-xF-WHb" secondAttribute="bottom" id="fVY-vg-TLw"/>
                             <constraint firstItem="gna-lu-oz4" firstAttribute="trailing" secondItem="3rw-xF-WHb" secondAttribute="trailing" id="ikC-nU-efa"/>
-                            <constraint firstItem="xet-wi-6n5" firstAttribute="height" secondItem="3rw-xF-WHb" secondAttribute="height" multiplier="0.189914" id="oGn-KI-Zq9"/>
+                            <constraint firstItem="xet-wi-6n5" firstAttribute="height" secondItem="3rw-xF-WHb" secondAttribute="height" multiplier="0.18" id="oGn-KI-Zq9"/>
                             <constraint firstItem="gna-lu-oz4" firstAttribute="trailing" secondItem="CZC-e6-XR4" secondAttribute="trailing" constant="5" id="rA8-05-qAk"/>
                             <constraint firstItem="bVg-hX-eUJ" firstAttribute="top" secondItem="kDT-Fv-fel" secondAttribute="bottom" constant="20" id="tDH-hs-j8G"/>
                             <constraint firstItem="xet-wi-6n5" firstAttribute="centerX" secondItem="bwM-Lm-ozX" secondAttribute="centerX" id="x1G-zi-qOM"/>
@@ -1044,15 +1042,15 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Natively Digital traditionally artisan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IL5-BF-i5W" customClass="CustomLabel" customModule="Ern3st" customModuleProvider="target">
-                                <rect key="frame" x="84" y="130.66666666666666" width="262.33333333333331" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Natively Digital , traditionally artisan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IL5-BF-i5W" customClass="CustomLabel" customModule="Ern3st" customModuleProvider="target">
+                                <rect key="frame" x="79.333333333333343" y="130.66666666666666" width="271.33333333333326" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="GaramondLight-Italic"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
-                                        <real key="value" value="20"/>
+                                        <real key="value" value="18"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -1068,7 +1066,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Panama-Bold"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="PanamaMonospace-Regular"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="customFontSize">
-                                        <real key="value" value="25"/>
+                                        <real key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="underlinedText" value="PLEASE PROVIDE US WITH ADDITIONAL DETAILS TO GUIDE THE MEASURING PROCESS"/>
                                 </userDefinedRuntimeAttributes>
@@ -1085,7 +1083,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Panama-Bold"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="PanamaMonospace-Regular"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="customFontSize">
-                                        <real key="value" value="20"/>
+                                        <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="underlinedText" value="ENTER YOUR NAME"/>
                                 </userDefinedRuntimeAttributes>
@@ -1103,7 +1101,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="underlinedText" value="YOUR EMAIL"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="PanamaMonospace-Regular"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="customFontSize">
-                                        <real key="value" value="20"/>
+                                        <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -1120,7 +1118,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="underlinedText" value="YOUR PASSWORD"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="PanamaMonospace-Regular"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="customFontSize">
-                                        <real key="value" value="20"/>
+                                        <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -1137,7 +1135,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="underlinedText" value="ENTER YOUR HEIGHT (CM)"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="PanamaMonospace-Regular"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="customFontSize">
-                                        <real key="value" value="20"/>
+                                        <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -1178,7 +1176,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="underlinedText" value="ENTER YOUR WEIGHT (KG)"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="PanamaMonospace-Regular"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="customFontSize">
-                                        <real key="value" value="20"/>
+                                        <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -1237,7 +1235,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="underlinedText" value="ENTER YOUR GENDER"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="customFontName" value="PanamaMonospace-Regular"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="customFontSize">
-                                        <real key="value" value="20"/>
+                                        <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -1320,7 +1318,7 @@
         <!--Video View Controller-->
         <scene sceneID="z4i-oW-uQt">
             <objects>
-                <viewController id="9oz-IH-bxM" customClass="VideoViewController" customModule="Ern3st" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VideoVC" id="9oz-IH-bxM" customClass="VideoViewController" customModule="Ern3st" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TrL-Sq-YpC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1358,14 +1356,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginbg" translatesAutoresizingMaskIntoConstraints="NO" id="R2a-Th-amD">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginbg" translatesAutoresizingMaskIntoConstraints="NO" id="R2a-Th-amD">
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NAa-IQ-GuX">
-                                <rect key="frame" x="21.666666666666657" y="451.66666666666669" width="387" height="40"/>
+                                <rect key="frame" x="21.666666666666657" y="442.33333333333331" width="387" height="35"/>
                                 <color key="backgroundColor" red="0.94095462559999998" green="0.93378144500000004" blue="0.90980041030000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="d9A-kP-keL"/>
+                                    <constraint firstAttribute="height" constant="35" id="d9A-kP-keL"/>
                                 </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1375,12 +1373,12 @@
                                         <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="8"/>
+                                        <real key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fts-Lj-dEA">
-                                <rect key="frame" x="21.666666666666657" y="531.66666666666663" width="387" height="40"/>
+                                <rect key="frame" x="21.666666666666657" y="517.33333333333337" width="387" height="35"/>
                                 <color key="backgroundColor" red="0.94095462559999998" green="0.93378144500000004" blue="0.90980041030000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1390,12 +1388,12 @@
                                         <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="8"/>
+                                        <real key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiT-ig-8dV">
-                                <rect key="frame" x="21.666666666666657" y="611.66666666666663" width="387" height="55"/>
+                                <rect key="frame" x="21.666666666666657" y="592.33333333333337" width="387" height="55"/>
                                 <color key="backgroundColor" red="0.2079307437" green="0.20761007070000001" blue="0.21960943939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="KyR-jM-ZAs"/>
@@ -1416,7 +1414,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qF-mN-Vil">
-                                <rect key="frame" x="21.666666666666657" y="727.66666666666663" width="387" height="55"/>
+                                <rect key="frame" x="21.666666666666657" y="708.33333333333337" width="387" height="55"/>
                                 <color key="backgroundColor" red="0.94095462559999998" green="0.93378144500000004" blue="0.90980041030000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -1436,10 +1434,10 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3Eseethrough" translatesAutoresizingMaskIntoConstraints="NO" id="yt2-pL-kJh">
-                                <rect key="frame" x="172" y="172.33333333333334" width="86" height="74.666666666666657"/>
+                                <rect key="frame" x="172" y="181.66666666666666" width="86" height="56"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Tailor Made Digitall Mill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mha-1R-Xrs" customClass="CustomLabel" customModule="Ern3st" customModuleProvider="target">
-                                <rect key="frame" x="120" y="287" width="190" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Tailor Made Digital Mill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mha-1R-Xrs" customClass="CustomLabel" customModule="Ern3st" customModuleProvider="target">
+                                <rect key="frame" x="122" y="277.66666666666669" width="186" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.92941176469999998" green="0.91764705879999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1451,7 +1449,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLEASE PROVIDE YOUR DETAILS TO LOG IN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTK-mD-fxX">
-                                <rect key="frame" x="60" y="348" width="310" height="45.666666666666686"/>
+                                <rect key="frame" x="60" y="338.66666666666669" width="310" height="45.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.92941176469999998" green="0.91764705879999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1463,13 +1461,13 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52i-jm-HtY">
-                                <rect key="frame" x="21.666666666666668" y="425.66666666666669" width="43.666666666666657" height="18"/>
+                                <rect key="frame" x="21.666666666666668" y="416.33333333333331" width="43.666666666666657" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.92941176469999998" green="0.91764705879999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8F-FM-0Mm" customClass="CustomLabel" customModule="Ern3st" customModuleProvider="target">
-                                <rect key="frame" x="203" y="686.66666666666663" width="24" height="21"/>
+                                <rect key="frame" x="203" y="667.33333333333337" width="24" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.92941176469999998" green="0.91764705879999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1481,7 +1479,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bz9-Oo-vSE">
-                                <rect key="frame" x="21.666666666666664" y="505.66666666666674" width="82.666666666666686" height="18"/>
+                                <rect key="frame" x="21.666666666666664" y="491.33333333333331" width="82.666666666666686" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.92941176469999998" green="0.91764705879999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1515,7 +1513,7 @@
                             <constraint firstItem="R2a-Th-amD" firstAttribute="leading" secondItem="ydl-PI-NXp" secondAttribute="leading" id="elx-6I-Hmm"/>
                             <constraint firstItem="8qF-mN-Vil" firstAttribute="width" secondItem="BiT-ig-8dV" secondAttribute="width" id="esM-6A-ey1"/>
                             <constraint firstItem="fts-Lj-dEA" firstAttribute="leading" secondItem="Bz9-Oo-vSE" secondAttribute="leading" id="gjh-LX-gRR"/>
-                            <constraint firstItem="yt2-pL-kJh" firstAttribute="height" secondItem="0f8-0s-dCk" secondAttribute="height" multiplier="0.08" id="i4p-tv-3pj"/>
+                            <constraint firstItem="yt2-pL-kJh" firstAttribute="height" secondItem="0f8-0s-dCk" secondAttribute="height" multiplier="0.06" id="i4p-tv-3pj"/>
                             <constraint firstItem="52i-jm-HtY" firstAttribute="top" secondItem="PTK-mD-fxX" secondAttribute="bottom" constant="32" id="ixd-jz-KG2"/>
                             <constraint firstItem="BiT-ig-8dV" firstAttribute="centerX" secondItem="0f8-0s-dCk" secondAttribute="centerX" id="lfo-tk-B0I"/>
                             <constraint firstItem="fts-Lj-dEA" firstAttribute="top" secondItem="Bz9-Oo-vSE" secondAttribute="bottom" constant="8" id="muh-yT-H7j"/>
@@ -1531,6 +1529,7 @@
                     <connections>
                         <outlet property="accountInput" destination="NAa-IQ-GuX" id="6oj-WI-cKX"/>
                         <outlet property="emailLabel" destination="52i-jm-HtY" id="Ed0-bz-rcc"/>
+                        <outlet property="loginHeadingLabel" destination="Mha-1R-Xrs" id="8Kd-4j-Zxo"/>
                         <outlet property="loginTitleLabel" destination="PTK-mD-fxX" id="YrF-G7-V3n"/>
                         <outlet property="passwordInput" destination="fts-Lj-dEA" id="74I-B6-OcY"/>
                         <outlet property="passwordLabel" destination="Bz9-Oo-vSE" id="C0W-Jw-8i5"/>
@@ -1965,7 +1964,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="xp6-cg-s9N"/>
         <segue reference="jb3-5H-n9t"/>
-        <segue reference="SIc-05-qdR"/>
+        <segue reference="tmY-nd-M36"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="3Eseethrough" width="578" height="739"/>

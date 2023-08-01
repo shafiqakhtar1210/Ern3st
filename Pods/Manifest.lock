@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.4.3)
+  - Alamofire (5.7.1)
   - AnimatedCollectionViewLayout (1.1.0)
   - BubbleTransition (3.2.0)
   - CircleBar (0.8.2)
@@ -7,7 +7,7 @@ PODS:
   - I3DRecorder (1.0.9)
   - SwiftyJSON (5.0.1)
   - Tg3dMobileScanSDK-iOS (1.0.2)
-  - ZIPFoundation (0.9.15)
+  - ZIPFoundation (0.9.16)
 
 DEPENDENCIES:
   - Alamofire
@@ -41,7 +41,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/TG3Ds/in3D-iOS-SDK.git
 
 SPEC CHECKSUMS:
-  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
   AnimatedCollectionViewLayout: 0c1a38c4be115c525c887be183fc91ef65737c5d
   BubbleTransition: 2f112cc19772d9ab199bc850de92f5eb34744bce
   CircleBar: 8e17d2090e6e319b518010535a3145fb8fd68c22
@@ -49,8 +49,8 @@ SPEC CHECKSUMS:
   I3DRecorder: 6dea027c1326474a6acf8834a9e95c775e143561
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   Tg3dMobileScanSDK-iOS: 1f66452e7ca2aaf20c59ff6669b192a60223e731
-  ZIPFoundation: 063163dc828bf699c5be160eb4f58f676322d94f
+  ZIPFoundation: d170fa8e270b2a32bef9dcdcabff5b8f1a5deced
 
-PODFILE CHECKSUM: 3a91982fbd84da204515049280d5aa6b8f4f8906
+PODFILE CHECKSUM: 2f9754da13b6f9af13da168df40a5836123ddce7
 
 COCOAPODS: 1.12.1

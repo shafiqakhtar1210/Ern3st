@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class PermissionsViewController: BaseViewController {
     @IBOutlet weak var proceedBtn: UIButton!
@@ -17,13 +18,16 @@ class PermissionsViewController: BaseViewController {
     @IBOutlet weak var descriptionTV: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let font = UIFont(name: "PanamaMonospace-Regular", size: 20)!
-        let font_btn = UIFont(name: "PanamaMonospace-Regular", size: 25)!
+        let font = UIFont(name: "PanamaMonospace-Regular", size: 16)!
+    
+        let font_btn = UIFont(name: "PanamaMonospace-Regular", size: 20)!
         declineBtn.underlineTextWithCustomFont(text: "DECLINE", font: font_btn, underlineStyle: .single)
         proceedBtn.underlineTextWithCustomFont(text: "PROCEED", font: font_btn, underlineStyle: .single)
-
+        permissionLabel.font = UIFont(name:"GaramondLight-Italic",size:40)
         // Call the function to underline the text with a custom font
-        descriptionTV.underlineWithCustomFont(text: "PLEASE NOTE THAT THIS APP REQUIRES ACCESS TO TRUE DEPTH CAMERA IN ORDER TO TAKE 3D SCAN OF YOUR BODY MEASUREMENT", font: font, underlineStyle: .single)
+        descriptionTV.underlineWithCustomFont(text: "PLEASE NOTE THAT THIS APP REQUIRES \n ACCESS TO YOUR IOS TRUE DEPTH \n SETTINGS IN ORDER TO MAKE 3D \n SCAN OF YOUR MEASUREMENTS", font: font, underlineStyle: .single)
+        descriptionTV.textAlignment = .center
+        
         // Call the function to underline the text with a custom font
       
         
@@ -41,8 +45,8 @@ class PermissionsViewController: BaseViewController {
                     self.icon.transform = CGAffineTransform.identity
                 self.permissionLabel.transform = CGAffineTransform.identity
                 self.descriptionTV.alpha = 1.0
-                self.proceedBtn.alpha = 1.0
-                self.declineBtn.alpha = 1.0
+                self.proceedBtn.alpha = 0.5
+                self.declineBtn.alpha = 0.5
                 
                 }
             })
@@ -67,4 +71,32 @@ class PermissionsViewController: BaseViewController {
     */
     //Permissions Required
 
+}
+struct RepresentablePermissionView: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> PermissionsViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let myViewController = storyboard.instantiateViewController(withIdentifier: "PermissionVC") as! PermissionsViewController
+        return myViewController
+    }
+    
+    func updateUIViewController(_ uiViewController: PermissionsViewController, context: Context) {
+        
+    }
+    
+    typealias UIViewControllerType = PermissionsViewController
+    
+  
+    
+    
+
+    
+
+}
+struct GetPermissionsView: PreviewProvider{
+    static var previews: some View{
+        RepresentablePermissionView()
+    }
+    
+    
+    
 }

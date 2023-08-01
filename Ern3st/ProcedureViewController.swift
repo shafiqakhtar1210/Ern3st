@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ProcedureViewController: BaseViewController {
     @IBOutlet weak var nextProcedureButton: UIButton!
@@ -35,4 +36,30 @@ class ProcedureViewController: BaseViewController {
     }
     */
 
+}
+struct RepresentableProcedureView: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> ProcedureViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let myViewController = storyboard.instantiateViewController(withIdentifier: "ProcedureVC") as! ProcedureViewController
+        return myViewController
+    }
+    
+    func updateUIViewController(_ uiViewController: ProcedureViewController, context: Context) {
+        
+    }
+    
+    typealias UIViewControllerType = ProcedureViewController
+    
+   
+
+    
+
+}
+struct GetProcedureView: PreviewProvider{
+    static var previews: some View{
+        RepresentableProcedureView()
+    }
+    
+    
+    
 }

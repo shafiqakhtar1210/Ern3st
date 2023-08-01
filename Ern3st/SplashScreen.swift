@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SplashScreen: BaseViewController {
     @IBOutlet weak var logo: UIImageView!
@@ -38,4 +39,29 @@ class SplashScreen: BaseViewController {
     }
     */
 
+}
+
+struct RepresentableSplashView: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> SplashScreen {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let myViewController = storyboard.instantiateViewController(withIdentifier: "SplashVC") as! SplashScreen
+        return myViewController
+
+    }
+    
+    func updateUIViewController(_ uiViewController: SplashScreen, context: Context) {
+        
+    }
+    
+    typealias UIViewControllerType = SplashScreen
+    
+
+}
+struct SplashViewPreview: PreviewProvider{
+    static var previews: some View{
+        RepresentableSplashView()
+    }
+    
+    
+    
 }

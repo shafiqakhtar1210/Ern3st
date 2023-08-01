@@ -12,6 +12,7 @@ class ViewController: BaseViewController {
     @IBOutlet weak var userNameTitle: UILabel!
     var showProfilePageFromReg = false
     
+    @IBOutlet weak var loginHeadingLabel: CustomLabel!
     @IBOutlet weak var genderLabel: ToggleLabel!
     
    
@@ -151,6 +152,7 @@ class ViewController: BaseViewController {
         }
      
         if self.currentSegue == "showMainPage" || self.currentSegue == "showMainPage2" || self.currentSegue == "showMainPage3" {
+            
           
           
            
@@ -496,11 +498,15 @@ class ViewController: BaseViewController {
         }
       
         if self.currentSegue == "showRegisterPage" {
+            print("got in register page again")
             // Set the image for the unselected state
            
 
             // Set other buttons in a similar manner
-
+         
+         
+           
+         
            
 
             reviewAccountInput.delegate = self
@@ -510,21 +516,29 @@ class ViewController: BaseViewController {
             weightInput.delegate = self
             self.reviewAccountInput.text = self.registerEmail
             self.reviewPasswordInput.text = self.registerPassword
-            
+            usernameInput.cornerRadius = 8
+            heightInput.cornerRadius = 8
+            weightInput.cornerRadius = 8
+            reviewPasswordInput.cornerRadius = 8
+            reviewAccountInput.cornerRadius = 8
+          
         }
         if self.currentSegue == "showLoginPage" || self.currentSegue == "backToLoginPage" || self.currentSegue == "showLoginPageFromDel"{
             print("got here in showLoginPage again")
+            loginHeadingLabel.text = "A Tailor Made \n Digital Mill"
           
-            let font = UIFont(name: "PanamaMonospace-Regular", size: 25)!
+            let font = UIFont(name: "PanamaMonospace-Regular", size: 18)!
            
             emailLabel.underlineWithCustomFont(text: "EMAIL", font: font, underlineStyle: .single)
             passwordLabel.underlineWithCustomFont(text: "PASSWORD", font: font, underlineStyle: .single)
-            loginTitleLabel.underlineWithCustomFont(text: "PLEASE PROVIDE YOUR DETAILS TO LOG IN", font: font, underlineStyle: .single)
-            signinButton.underlineTextWithCustomFont(text: "SIGN IN", font: font, underlineStyle: .single)
+            loginTitleLabel.underlineWithCustomFont(text: "PLEASE PROVIDE \n YOUR DETAILS TO LOG IN", font: font, underlineStyle: .single)
+            signinButton.underlineTextWithCustomFont(text: "LOG IN", font: font, underlineStyle: .single)
             registerBtn.underlineTextWithCustomFont(text: "REGISTER WITH EMAIL", font: font, underlineStyle: .single)
            
             accountInput.delegate = self
             passwordInput.delegate = self
+            accountInput.layer.cornerRadius = 8
+            passwordInput.layer.cornerRadius = 8
           
             
         }

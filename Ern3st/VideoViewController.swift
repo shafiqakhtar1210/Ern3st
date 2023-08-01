@@ -10,6 +10,7 @@ import DWAnimatedLabel
 
 import AVFoundation
 import AVKit
+import SwiftUI
 
 class VideoViewController: UIViewController {
     var playerController: AVPlayerViewController!
@@ -76,6 +77,16 @@ class VideoViewController: UIViewController {
            
             
         }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if segue.identifier == "showLoginPage" {
+               // Check if the destination view controller is the correct type
+               if let destinationVC = segue.destination as? ViewController {
+                   // Set the data in the destination view controller
+                   destinationVC.currentSegue = segue.identifier!
+               }
+           }
+       }
+    
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
            if keyPath == "rate" {
                if let player = object as? AVPlayer {
@@ -150,6 +161,7 @@ class VideoViewController: UIViewController {
         NotificationCenter.default.removeObserver(self)
         
     }
+    
 
 
 
@@ -165,4 +177,33 @@ class VideoViewController: UIViewController {
     }
     */
 
+}
+struct RepresentableVideoView: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> VideoViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let myViewController = storyboard.instantiateViewController(withIdentifier: "VideoVC") as! VideoViewController
+        return myViewController
+
+    }
+    
+    func updateUIViewController(_ uiViewController: VideoViewController, context: Context) {
+        
+    }
+    
+    typealias UIViewControllerType = VideoViewController
+    
+    
+    
+   
+
+    
+
+}
+struct GetVideoView: PreviewProvider{
+    static var previews: some View{
+        RepresentableVideoView()
+    }
+    
+    
+    
 }

@@ -21,6 +21,8 @@
 		4138C40E2940E8A800F959F8 /* Panama-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4138C40D2940E8A800F959F8 /* Panama-Bold.ttf */; };
 		4138C4102940E95500F959F8 /* Caslons-Egyptian-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4138C40F2940E95500F959F8 /* Caslons-Egyptian-Book.ttf */; };
 		4140B027294221950018F313 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4140B026294221950018F313 /* CustomLabel.swift */; };
+		414D1C5D2A77B87D00EE62E8 /* ViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D1C5C2A77B87D00EE62E8 /* ViewControllerPreview.swift */; };
+		414D1C612A77C9B700EE62E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D1C602A77C9B700EE62E8 /* ContentView.swift */; };
 		414FA93528D0945E00695318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414FA93428D0945E00695318 /* AppDelegate.swift */; };
 		414FA93728D0945E00695318 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414FA93628D0945E00695318 /* SceneDelegate.swift */; };
 		414FA93C28D0945E00695318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 414FA93A28D0945E00695318 /* Main.storyboard */; };
@@ -73,6 +75,8 @@
 		4138C40D2940E8A800F959F8 /* Panama-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Panama-Bold.ttf"; sourceTree = "<group>"; };
 		4138C40F2940E95500F959F8 /* Caslons-Egyptian-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Caslons-Egyptian-Book.ttf"; sourceTree = "<group>"; };
 		4140B026294221950018F313 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		414D1C5C2A77B87D00EE62E8 /* ViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPreview.swift; sourceTree = "<group>"; };
+		414D1C602A77C9B700EE62E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		414FA93128D0945E00695318 /* Ern3st.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ern3st.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		414FA93428D0945E00695318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		414FA93628D0945E00695318 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -215,6 +219,8 @@
 				4192333F2A4B1DBA00C18BCE /* ToggleLabel.swift */,
 				412FFB3B2A643CFE00C1E0C1 /* MeasureDetailsVC.swift */,
 				411552422A6BE25C000BDB47 /* VideoViewController.swift */,
+				414D1C5C2A77B87D00EE62E8 /* ViewControllerPreview.swift */,
+				414D1C602A77C9B700EE62E8 /* ContentView.swift */,
 			);
 			path = Ern3st;
 			sourceTree = "<group>";
@@ -366,10 +372,12 @@
 				41F80E172A01712900C67038 /* Scan.swift in Sources */,
 				41B84A2B2915426600AF085A /* ApiNetworkManager.swift in Sources */,
 				41BE1B682A3DE36900628DC6 /* UITextView.swift in Sources */,
+				414D1C5D2A77B87D00EE62E8 /* ViewControllerPreview.swift in Sources */,
 				411552432A6BE25C000BDB47 /* VideoViewController.swift in Sources */,
 				414FA93528D0945E00695318 /* AppDelegate.swift in Sources */,
 				41F74A7E28D5ED1A0006F136 /* UIColorExt.swift in Sources */,
 				41B07ECE298EB907001D43FA /* GetStartedViewController.swift in Sources */,
+				414D1C612A77C9B700EE62E8 /* ContentView.swift in Sources */,
 				41C276D2294CE87400150AE5 /* GlobalUserData.swift in Sources */,
 				411C413E2A41D49A00662FA7 /* CenteredButton.swift in Sources */,
 				410AB75129AA18A60056FDC5 /* Helpers.swift in Sources */,
@@ -530,7 +538,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UZMLYC4A8U;
 				INFOPLIST_FILE = Ern3st/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -560,7 +568,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UZMLYC4A8U;
 				INFOPLIST_FILE = Ern3st/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
